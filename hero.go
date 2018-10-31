@@ -21,7 +21,7 @@ type HeroService struct {
 
 // Hero holds a collection of data specific to a Dota 2 hero.
 type Hero struct {
-	ID            int      `json:"id"`
+	ExId          int      `json:"id" bson:"exId"`
 	Name          string   `json:"name"`
 	LocalizedName string   `json:"localized_name"`
 	PrimaryAttr   string   `json:"primary_attr"`
