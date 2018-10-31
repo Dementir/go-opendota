@@ -20,7 +20,7 @@ type ProPlayerService struct {
 
 // ProPlayer represents a professional player in Dota 2.
 type ProPlayer struct {
-	AccountID       int    `json:"account_id"`
+	AccountID       int64  `json:"account_id"`
 	SteamID         string `json:"steamid"`
 	Avatar          string `json:"avatar"`
 	AvatarMedium    string `json:"avatarmedium"`

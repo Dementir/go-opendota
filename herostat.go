@@ -19,7 +19,7 @@ type HeroStatService struct {
 
 // HeroStat represents a collection of statistics about a hero.
 type HeroStat struct {
-	ID                int      `json:"id"`
+	ExId              int      `json:"id" bson:"exId"`
 	Name              string   `json:"name"`
 	LocalizedName     string   `json:"localized_name"`
 	PrimaryAttr       string   `json:"primary_attr"`
@@ -31,7 +31,7 @@ type HeroStat struct {
 	BaseHealthRegen   float64  `json:"base_health_regen"`
 	BaseMana          int      `json:"base_mana"`
 	BaseManaRegen     float64  `json:"base_mana_regen"`
-	BaseArmor         int      `json:"base_armor"`
+	BaseArmor         float64  `json:"base_armor"`
 	BaseMr            int      `json:"base_mr"`
 	BaseAttackMin     int      `json:"base_attack_min"`
 	BaseAttackMax     int      `json:"base_attack_max"`
